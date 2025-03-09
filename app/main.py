@@ -54,7 +54,7 @@ def handle_message(event: MessageEvent):
         
         word = event.message.text
 
-        #reply_message = "Hello from Dev Environment"
+        #reply_message = "Hello from Dev "
         #reply_message = response_message(event)
         
         reply_message = get_definition(word)
