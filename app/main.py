@@ -52,11 +52,9 @@ def handle_message(event: MessageEvent):
     with ApiClient(configuration) as api_client:
         line_bot_api = MessagingApi(api_client)
         
-        word = event.message.text
-
         #reply_message = "Hello from Dev "
         #reply_message = response_message(event)
-        
+        word = event.message.text
         reply_message = get_definition(word)
 
         line_bot_api.reply_message(
