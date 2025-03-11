@@ -24,6 +24,7 @@ def lambda_handler(event, context):
                 # reply message to LINE
                 with ApiClient(configuration) as api_client:
                     line_bot_api = MessagingApi(api_client)
+                    
                     reply_message = get_definition(text)
 
                     line_bot_api.reply_message(
