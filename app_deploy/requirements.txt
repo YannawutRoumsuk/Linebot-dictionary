@@ -1,7 +1,0 @@
-fastapi
-uvicorn
-python-dotenv
-line-bot-sdk
-requests
-mangum
-
